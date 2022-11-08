@@ -13,8 +13,8 @@
     --font-clr: #ffff;
     --navbar: #5d9181;
     --nav-hover: #8b0953;
-    --hSize: 4.5rem;
-    --pSize: 3rem;
+    --hSize: 3.5rem;
+    --pSize: 2rem;
     --h2Size: 2.3rem;
     margin: 0;
     padding: 0;
@@ -24,10 +24,8 @@
 }
 
 @media only screen and (max-width: 1280px) {
-    :root {
-        --hSize: 3.5rem;
-        --pSize: 2rem;
-        --h2Size: 2.3rem;
+    body {
+        background-color: lightblue;
     }
 }
 
@@ -38,6 +36,10 @@
     background-color: var(--navbar);
     font-family: var(--prim-font);
     border-radius: 5rem;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
 }
 
 /* Links inside the navbar */

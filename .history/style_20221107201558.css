@@ -13,22 +13,14 @@
     --font-clr: #ffff;
     --navbar: #5d9181;
     --nav-hover: #8b0953;
-    --hSize: 4.5rem;
-    --pSize: 3rem;
+    --hSize: 3.5rem;
+    --pSize: 2rem;
     --h2Size: 2.3rem;
     margin: 0;
     padding: 0;
     background-color: var(--prim-clr);
     scroll-behavior: smooth;
     color: var(--font-clr);
-}
-
-@media only screen and (max-width: 1280px) {
-    :root {
-        --hSize: 3.5rem;
-        --pSize: 2rem;
-        --h2Size: 2.3rem;
-    }
 }
 
 
@@ -38,6 +30,10 @@
     background-color: var(--navbar);
     font-family: var(--prim-font);
     border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
 }
 
 /* Links inside the navbar */
