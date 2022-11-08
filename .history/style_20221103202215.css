@@ -1,0 +1,125 @@
+/*importing fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&display=swap');
+
+/*setting global properties and variables*/
+
+:root {
+    --prim-font: 'Montserrat', sans-serif;
+    --sec-font: 'Open Sans', sans-serif;
+    --prim-clr: #31b89a;
+    --sec-clr: #364b45;
+    --accent-clr: #98b0a9;
+    --font-clr: #ffff;
+    --navbar: #5d9181;
+    --nav-hover: #8b0953;
+    --hSize: 2.5rem;
+    --pSize: 2rem;
+    --h2Size: 2.3rem;
+    margin: 0;
+    padding: 0;
+    background-color: var(--prim-clr);
+    scroll-behavior: smooth;
+    color: var(--font-clr);
+}
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: var(--navbar);
+    font-family: var(--prim-font);
+    border-radius: 5rem;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: var(--font-clr);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 50px;
+    border: none;
+    outline: none;
+    color: var(--sxth-clr);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+    line-height: 10px;
+}
+
+/* Add a background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: var(--nav-hover);
+    border-radius: 1rem;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--navbar);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 1rem;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: var(--font-clr);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.dropdown-content a:hover {
+    background-color: var(--nav-hover);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* text styling*/
+
+h1 {
+    font-family: var(--prim-font);
+    text-align: center;
+    font-size: var(--hSize);
+}
+
+p {
+    font-size: var(--pSize);
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    font-size: var(--pSize);
+}
+
+h2 {
+    font-family: var(--prim-font);
+    text-align: center;
+    font-size: var(--h2Size);
+}

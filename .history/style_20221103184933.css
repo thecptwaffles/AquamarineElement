@@ -1,0 +1,18 @@
+/*importing fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&display=swap');
+
+/*setting global properties and variables*/
+
+:root {
+    --prim-font: 'Montserrat', sans-serif;
+    --sec-font: 'Open Sans', sans-serif;
+    --prim-clr: ;
+    --sec-clr: ;
+    --accent-clr: ;
+    --font-clr: ;
+    margin: 0;
+    padding: 0;
+    background-color: var(--prim-clr);
+    scroll-behavior: smooth;
+}
